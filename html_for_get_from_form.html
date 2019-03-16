@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get From Form</title>
+</head>
+<body>
+<form action="{{ url_for('form') }}" method="post" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ form.bizAuth.label }}
+    {{ form.bizAuth }}
+    {{ form.newDoc.label }}
+    {{ form.newDoc }}
+    {{ form.submit }}
+</form>
+</body>
+</html>
