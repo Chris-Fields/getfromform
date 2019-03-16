@@ -1,1 +1,1 @@
-web: gunicorn app:get_from_file
+web: gunicorn app:get_from_file.py
